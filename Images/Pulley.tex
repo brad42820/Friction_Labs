@@ -1,0 +1,23 @@
+\documentclass[tikz]{standalone}% 'crop' is the default for v1.0, before it was 'preview'
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\begin{document}
+\begin{tikzpicture}[scale=2]
+  \fill[brown] (0,0) -- (4,0) -- (4,3) -- cycle;
+  
+  \draw[line width=4] (3.97,2.94) -- (4.15, 3.2);
+  \fill[gray] (4.3, 3.4) circle[radius=0.25];
+  \fill (4.3, 3.4) circle[radius=0.04];
+  
+  \fill[brown!50!black] (1,0.75) -- (3, 2.25) -- (2.25, 3.25) -- (0.25, 1.75) -- cycle;
+  
+  \draw[gray!50!black, line width = 5] (2.73, 2.58) -- (4.1, 3.6) arc (125:0:0.3) -- (4.575, 2);
+  
+  \fill (4.1, 2) -- (5.05, 2) -- (5.05, 1) -- (4.1, 1) -- cycle;
+  
+  \node at (3, 1) {\Large Ramp};
+  \node[white, rotate=37] at (1.5, 1.875) {\Large Block};
+  \node[white] at (4.575, 1.5) {\Large Weight};
+  \node at (4.3, 3.9) {\Large Pulley};
+  
+\end{tikzpicture}
+\end{document}
